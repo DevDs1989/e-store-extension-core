@@ -8,12 +8,10 @@ export default defineContentScript({
     const store = resolveStoreAdapter(window.location.hostname);
 
     if (!store) {
-      console.log('No adapter found for this site');
       return;
     }
 
     const orchestrator = new Orchestrator(store);
     orchestrator.init();
-    console.log(store);
   },
 });

@@ -11,6 +11,12 @@ export default defineConfig({
     description: 'E-Store Extension Core',
     version: '0.0.1',
     host_permissions: ['https://world.openfoodfacts.org/*', 'https://search.openfoodfacts.org/*'],
+    web_accessible_resources: [
+      {
+        resources: ['score/*.svg', 'logos/*.svg'],
+        matches: ['<all_urls>'],
+      },
+    ],
     permissions: ['storage', 'unlimitedStorage'],
   },
 });
