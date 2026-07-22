@@ -27,7 +27,7 @@ e-store-extension-core/
 
 ## Local Setup
 ```bash
-git clone https://github.com/DevDs1989/e-store-extension-core.git
+git clone https://github.com/offCanada/e-store-extension-core.git
 cd e-store-extension-core
 pnpm install
 ```
